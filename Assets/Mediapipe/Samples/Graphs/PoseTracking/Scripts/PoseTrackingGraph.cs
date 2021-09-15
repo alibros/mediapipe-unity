@@ -24,6 +24,7 @@ public class PoseTrackingGraph : DemoGraph {
   private DetectionPacket poseDetectionPacket;
 
   private SidePacket sidePacket;
+    public NormalizedLandmarkList poseLandmarks;
 
   public override Status StartRun() {
     poseLandmarksStreamPoller = graph.AddOutputStreamPoller<NormalizedLandmarkList>(poseLandmarksStream).Value();
@@ -50,9 +51,10 @@ public class PoseTrackingGraph : DemoGraph {
   }
 
   private PoseTrackingValue FetchNextPoseTrackingValue() {
-    NormalizedLandmarkList poseLandmarks = null;
+    poseLandmarks = null;
     if (poseLandmarksStreamPoller.QueueSize() > 0) {
       poseLandmarks = FetchNextPoseLandmarks();
+      Debug.Log("LANDMARKS HERE: " + poseLandmarks.Landmark.Count);
     }
 
     Detection poseDetection = null;

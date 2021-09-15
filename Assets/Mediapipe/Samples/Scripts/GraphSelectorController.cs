@@ -17,6 +17,7 @@ public class GraphSelectorController : MonoBehaviour {
   [SerializeField] GameObject boxTrackingGraph = null;
   [SerializeField] GameObject instantMotionTrackingGraph = null;
   [SerializeField] GameObject officialDemoGraph = null;
+  [SerializeField] GameObject BlazePoseFullBodyGraph = null;
 
   private GameObject sceneDirector;
   private Dictionary<string, GameObject> graphs;
@@ -47,6 +48,7 @@ public class GraphSelectorController : MonoBehaviour {
     AddGraph("Box Tracking", boxTrackingGraph);
     AddGraph("Instant Motion Tracking", instantMotionTrackingGraph);
     AddGraph("Official Demo", officialDemoGraph);
+    AddGraph("Full Body BlazePose", BlazePoseFullBodyGraph);
 
     var graphSelector = GetComponent<Dropdown>();
     graphSelector.ClearOptions();

@@ -1,5 +1,26 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.2.5",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "72e620d169841f32bc6110ad0e12ee9eae6f1aaf"
+    },
+    "com.github.asus4.tflite": {
+      "version": "file:com.github.asus4.tflite",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.github.asus4.tflite.common": {
+      "version": "file:com.github.asus4.tflite.common",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.github.asus4.tflite": "2.4.1"
+      }
+    },
     "com.github.homuler.mediapipe": {
       "version": "file:com.github.homuler.mediapipe",
       "depth": 0,
@@ -7,7 +28,7 @@
       "dependencies": {}
     },
     "com.unity.2d.animation": {
-      "version": "5.0.4",
+      "version": "5.0.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -30,7 +51,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.path": {
-      "version": "4.0.1",
+      "version": "4.0.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -44,12 +65,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.psdimporter": {
-      "version": "4.0.2",
+      "version": "4.1.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.2d.common": "4.0.2",
-        "com.unity.2d.animation": "5.0.2",
+        "com.unity.2d.common": "4.0.3",
+        "com.unity.2d.animation": "5.0.6",
         "com.unity.2d.sprite": "1.0.0"
       },
       "url": "https://packages.unity.com"
@@ -61,13 +82,13 @@
       "dependencies": {}
     },
     "com.unity.2d.spriteshape": {
-      "version": "5.1.1",
+      "version": "5.1.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.1.0",
         "com.unity.2d.common": "4.0.3",
-        "com.unity.2d.path": "4.0.1",
+        "com.unity.2d.path": "4.0.2",
         "com.unity.modules.physics2d": "1.0.0"
       },
       "url": "https://packages.unity.com"
@@ -79,7 +100,7 @@
       "dependencies": {}
     },
     "com.unity.collab-proxy": {
-      "version": "1.3.9",
+      "version": "1.9.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -102,7 +123,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.7",
+      "version": "2.0.11",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -148,7 +169,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.24",
+      "version": "1.1.29",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -169,7 +190,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.textmeshpro": {
-      "version": "3.0.1",
+      "version": "3.0.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -178,7 +199,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.4.7",
+      "version": "1.4.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {
