@@ -48,10 +48,10 @@ public class PoseDetection : MonoBehaviour
 
         StartInterpreter();
 
-        string jsonPath = Application.streamingAssetsPath + "/" + poseLabels;
-        string jsonStr = File.ReadAllText(jsonPath);
-        modelMap = JsonUtility.FromJson<ModelMap>(jsonStr);
-        Debug.Log("lables: " + modelMap.labels.Length);
+        //string jsonPath = Application.streamingAssetsPath + "/" + poseLabels;
+        //string jsonStr = File.ReadAllText(jsonPath);
+        //modelMap = JsonUtility.FromJson<ModelMap>(jsonStr);
+        //Debug.Log("lables: " + modelMap.labels.Length);
 
 
     }
@@ -93,9 +93,10 @@ public class PoseDetection : MonoBehaviour
         }
         float maxValue = outputsToShow.Max();
         int maxIndex = outputsToShow.ToList().IndexOf(maxValue);
-        poseText.text = modelMap.labels[maxIndex];
-
-
+        //poseText.text = modelMap.labels[maxIndex];
+        // transform.parent.parent.GetComponent<Canvas>().GetComponent<Text>().text= modelMap.labels[maxIndex];
+        Text info = GameObject.Find("Canvas/InfoText").GetComponent<UnityEngine.UI.Text>();
+        info.text = maxIndex.ToString(); //modelMap.labels[maxIndex]; ;
 
         //     }
 

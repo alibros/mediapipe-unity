@@ -17,6 +17,7 @@ build/
 *.dylib
 *.so
 *.framework/
+*.app
 
 bazel-*
 
