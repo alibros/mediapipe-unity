@@ -13,9 +13,6 @@ build/
 *.sln
 
 *.aar
-*.dll
-*.dylib
-*.so
 *.framework/
 *.app
 
